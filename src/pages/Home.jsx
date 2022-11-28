@@ -103,7 +103,7 @@ const Home = () => {
                       src={product.productImgs[0]}
                       style={{ height: 250, objectFit: "contain" }}
             /> */}
-            <hr />
+                    <hr />
                     <Card.Body>
                       <Card.Title>{product.title}</Card.Title>
                       <br />

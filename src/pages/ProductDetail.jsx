@@ -26,7 +26,7 @@ const ProductDetail = () => {
 
   return (
     <div>
-      <Row>
+      <Row xs={1} md={2} className="g-4">
         <Col>
           <Carousel slide={false}>
             <Carousel.Item>
@@ -87,7 +87,7 @@ const ProductDetail = () => {
                   <Card.Text>
                     ${product.price}
                   </Card.Text>
-                  <Button variant="secondary" style={{ width: "20%", }}><i class='bx bxs-cart-add bx-md'></i></Button>
+                  <Button variant="secondary" style={{ width: "", }}><i class='bx bxs-cart-add bx-md'></i></Button>
                 </Card.Body>
               </Link>
             </Card>
