@@ -33,21 +33,17 @@ const Home = () => {
           <h3>Categories</h3>
 
           <ListGroup>
-
             {
               categoryList.map(category => (
-                <ListGroup.Item
+                <ListGroup.Item key={category.id}
                   onClick={() => dispatch(filterProductsThunk(category.id))}
                   style={{ cursor: "pointer" }}
                 >
                   {category.name}
-
                 </ListGroup.Item>
               ))
             }
-
           </ListGroup>
-
         </Col>
         {/*DOCUMENTOS*/}
         <Col lg={10}>

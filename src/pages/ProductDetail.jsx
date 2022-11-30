@@ -26,9 +26,10 @@ const ProductDetail = () => {
 
   return (
     <div>
+      
       <Row xs={1} md={2} className="g-4">
         <Col>
-          <Carousel slide={false}>
+          <Carousel slide={false} variant="dark">
             <Carousel.Item>
               <img
                 className="img-fluid" 
@@ -41,9 +42,7 @@ const ProductDetail = () => {
               <img
                 className="img-fluid" 
                 src={productsFound?.productImgs[1]}
-                alt="Second slide"
-                
-
+                alt="Second slide"              
               />
             </Carousel.Item>
             <Carousel.Item>
@@ -68,7 +67,8 @@ const ProductDetail = () => {
           <Button>add to cart</Button>
         </Col>
       </Row>
-      <br />
+      <br /><br />
+      
       <h3>Related Products</h3>
       <br />
       <Row xs={1} md={2} lg={3} className="g-4">
