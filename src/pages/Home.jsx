@@ -47,9 +47,10 @@ const Home = () => {
         </Col>
         {/*DOCUMENTOS*/}
         <Col lg={10}>
-          <h1>Componente Home</h1>
+          <h1>Bratini Electronics Home</h1>
           <InputGroup className="mb-3">
             <Form.Control
+
               placeholder="Find your product"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
@@ -57,11 +58,12 @@ const Home = () => {
               onChange={e => setInputSearch(e.target.value)}
             />
             <Button
+              style={{ background: "lightgray" }}
               variant="outline-secondary"
               id="button-addon2"
               onClick={() => dispatch(filterProduThunk(inputSearch))}
             >
-              Search
+              <i class='bx bx-search-alt-2 bx-md' ></i>
             </Button>
           </InputGroup>
           <Row xs={1} md={2} lg={3} className="g-4">
@@ -101,12 +103,12 @@ const Home = () => {
             /> */}
                     <hr />
                     <Card.Body>
-                      <Card.Title>{product.title}</Card.Title>
+                      <Card.Title><i class='bx bx-cross' ></i>{" "}{product.title}</Card.Title>
                       <br />
                       <Card.Text>
                         ${product.price}
                       </Card.Text>
-                      <Button variant="secondary" style={{ width: "", }}><i class='bx bxs-cart-add bx-md'></i></Button>
+                      <Button variant="secondary" style={{ width: "100%", }}>See all details</Button>
                     </Card.Body>
                   </Link>
                 </Card>

@@ -94,3 +94,9 @@ p {
   margin-bottom: 1rem;
   text-align: left;
 }
+
+.deleteProduct {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}

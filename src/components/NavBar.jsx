@@ -16,15 +16,15 @@ const NavBar = () => {
 
     return (
         <>
-        <Navbar bg="primary" variant="dark" expand="lg">
+        <Navbar   bg="primary" variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand as={Link} to="/">Bratini Electronics</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/"><h4>Bratini Electronics</h4></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/login"> Login </Nav.Link>
                         <Nav.Link as={Link} to="/purchases"> Purchases </Nav.Link>
-                        <Nav.Link onClick={handleShow}><i class='bx bx-shopping-bag bx-md' ></i></Nav.Link>
+                        <Nav.Link onClick={handleShow}><i class='bx bxs-cart bx-md' ></i></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
