@@ -20,7 +20,7 @@ const Home = () => {
     dispatch(getProductsThunk())
 
     axios.get("https://e-commerce-api.academlo.tech/api/v1/products/categories")
-      .then(res => setCategoryList(res.data.data.categories))
+      .then((res) => setCategoryList(res.data.data.categories))
   }, [])
 
   console.log(categoryList)
