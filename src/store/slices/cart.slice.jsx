@@ -14,14 +14,13 @@ export const cartSlice = createSlice({
 })
 
 export const getCartThunk = () => (dispatch) => {
-    console.log("me ejecute")
     dispatch(setIsLoading(true));
     axios.get("https://e-commerce-api.academlo.tech/api/v1/cart", getConfig())
         .then((res) => dispatch(setCart(res.data.data.cart.products)))
         .finally(() => dispatch(setIsLoading(false)));
 }
 
-export const checkoutCartThunk = () => (dispatch) => {
+export const checkOutCartThunk = () => (dispatch) => {
     dispatch(setIsLoading(true));
     return axios.post("https://e-commerce-api.academlo.tech/api/v1/purchases", {}, getConfig())
         .then(() => dispatch(setCart([])))
